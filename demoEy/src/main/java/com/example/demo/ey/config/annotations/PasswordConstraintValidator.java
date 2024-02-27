@@ -17,7 +17,8 @@ public class PasswordConstraintValidator implements ConstraintValidator<Password
 	@Override
 	public boolean isValid(String password, ConstraintValidatorContext context) {
 
-		Pattern p = Pattern.compile("^(?=(?:.*\\d){2})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})\\S{3,}$");
+		// Dígitos, minúsculas y mayúsculas a partir de 3 caracteres
+		Pattern p = Pattern.compile("^(?=\\w*\\d)(?=\\w*[A-Z])(?=\\w*[a-z])\\S{3,16}$");
 
 		if (password == null) {
 

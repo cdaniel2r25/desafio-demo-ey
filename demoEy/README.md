@@ -48,7 +48,7 @@ content-type: aplicación/json
 {
 	"name": "Juan Rodriguez",
 	"email": "juan@rodriguez.org",
-	"password": "hunter2",
+	"password": "Hunter2",
 	"phones": [
 		{
 			"number": "1234567",
